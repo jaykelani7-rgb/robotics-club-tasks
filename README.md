@@ -19,4 +19,5 @@ This repository contains basic Arduino tasks completed as part of the robotics c
 - Tinkercad for simulation
 
 ## Output
-Screenshots of simulations are provided in the screenshots folder.
+- Screenshots and simulation video are provided in the screenshots folder.
+
