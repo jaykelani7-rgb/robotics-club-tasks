@@ -4,7 +4,7 @@ int buttonPin = 2;
 int speeds[] = {200, 500, 1000};
 int index = 0;
 
-bool lastButtonState = HIGH;
+bool lastbuttonstate = HIGH;
 
 void setup() {
   pinMode(ledPin, OUTPUT);
@@ -12,14 +12,14 @@ void setup() {
 }
 
 void loop() {
-  bool buttonState = digitalRead(buttonPin);
+  bool buttonstate = digitalRead(buttonPin);
 
-  if (lastButtonState == HIGH && buttonState == LOW) {
+  if (lastbuttonstate == HIGH && buttonstate == LOW) {
     index++;
     if (index > 2) index = 0;
   }
 
-  lastButtonState = buttonState;
+  lastbuttonstate = buttonstate;
 
   digitalWrite(ledPin, HIGH);
   delay(speeds[index]);
